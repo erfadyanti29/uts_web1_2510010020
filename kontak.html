@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokasi &amp; Kontak - TaKopi Takisung | Erfa Dyanti (2510010020)</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Utama -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo TaKopi" class="logo-img"><span class="logo-text">Ta<span>Kopi</span></span>
+      </a>
+
+      <!-- Menu mobile -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigasi">
+      <label for="menu-toggle" class="hamburger" aria-label="Buka Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Katalog Menu</a></li>
+        <li><a href="kontak.html" class="active">Lokasi &amp; Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Formulir reservasi & peta -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1>Reservasi Tempat &amp; Hubungi Kami</h1>
+          <p>
+            Ingin memesan meja untuk rombongan keluarga, nongkrong komunitas, atau menanyakan ketersediaan menu favorit? 
+            Silakan kirimkan pesan kepada kami melalui formulir di bawah ini.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+                    <form action="kontak.html" method="get" class="contact-form">
+            <fieldset>
+              <legend>Formulir Reservasi &amp; Pertanyaan</legend>
+
+                            <div class="form-group">
+                <label for="nama">Nama Lengkap <span class="req">*</span></label>
+                <input 
+                  type="text" 
+                  id="nama" 
+                  name="nama" 
+                  placeholder="Contoh: Rian Anggara" 
+                  required>
+              </div>
+
+                            <div class="form-group">
+                <label for="email">Alamat Email Aktif <span class="req">*</span></label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="nama@domain.com" 
+                  required>
+              </div>
+
+                            <div class="form-group">
+                <label for="subjek">Subjek Keperluan / Reservasi</label>
+                <select id="subjek" name="subjek">
+                  <option value="reservasi-meja">Reservasi Meja Nongkrong Santai</option>
+                  <option value="rombongan-wisata">Pemesanan Paket Rombongan Wisata</option>
+                  <option value="acara-komunitas">Kumpul Komunitas / Gathering</option>
+                  <option value="tanya-menu">Pertanyaan Menu &amp; Stok</option>
+                  <option value="lainnya">Saran &amp; Masukan Lainnya</option>
+                </select>
+              </div>
+
+                            <div class="form-group">
+                <label for="pesan">Pesan atau Rincian Reservasi</label>
+                <textarea 
+                  id="pesan" 
+                  name="pesan" 
+                  rows="4" 
+                  placeholder="Tuliskan jumlah orang, perkiraan jam kedatangan, atau menu kopi yang ingin disiapkan terlebih dahulu..."></textarea>
+              </div>
+
+                            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Kirim Pesan Sekarang</button>
+                <button type="reset" class="btn btn-outline-dark">Reset Formulir</button>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- Peta lokasi -->
+          <div class="map-card">
+            <h3>Lokasi Kedai TaKopi</h3>
+            <p>
+              Berlokasi strategis di jalur utama wisata Takisung, Kabupaten Tanah Laut. Tempat istirahat paling pas sebelum atau sesudah menikmati keindahan pantai.
+            </p>
+            <div class="map-frame">
+              <iframe 
+                title="Peta Lokasi TaKopi Takisung Kabupaten Tanah Laut"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63683.92138122396!2d114.605!3d-3.885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de46d5c0b89b43d%3A0x6b7724a35cb99!2sTakisung%2C%20Kabupaten%20Tanah%20Laut%2C%20Kalimantan%20Selatan!5e0!3m2!1sid!2sid!4v1700000000000"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.88rem; color: var(--text-muted);">
+              <strong>Alamat:</strong> Jl. Raya Takisung, Kec. Takisung, Kab. Tanah Laut, Kalimantan Selatan
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabel paket kafe -->
+    <section id="tabel-layanan" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Paket Kunjungan &amp; Reservasi Meja</h2>
+          <p>Pilihan paket hemat minuman dan cemilan untuk santai sendiri, berdua, maupun rombongan keluarga.</p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="service-table">
+            <caption>Daftar Paket Nongkrong &amp; Reservasi TaKopi (Tanah Laut)</caption>
+            <thead>
+              <tr>
+                <th scope="col" style="width: 25%;">Nama Paket Kafe</th>
+                <th scope="col" style="width: 43%;">Fasilitas &amp; Sajian Menu</th>
+                <th scope="col" style="width: 16%;">Biaya Paket</th>
+                <th scope="col" style="width: 16%;">Durasi Kunjungan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Paket Ngopi Santai Sore</strong></td>
+                <td>1 Cup Kopi Pilihan (Es/Panas) + 1 Porsi Pisang Goreng Crispy gula palem</td>
+                <td><strong>Rp 30.000</strong> / paket</td>
+                <td><span class="badge-time">Santai Sepuasnya</span></td>
+              </tr>
+              <tr>
+                <td><strong>Paket Berdua di Takisung</strong></td>
+                <td>2 Cup Kopi Susu TaKopi Aren + 1 Porsi French Fries Gurih saus sambal</td>
+                <td><strong>Rp 55.000</strong> / paket</td>
+                <td><span class="badge-time">Santai Sepuasnya</span></td>
+              </tr>
+              <tr>
+                <td><strong>Paket Rombongan Wisatawan</strong></td>
+                <td>5 Cup Minuman Aneka Rasa + 2 Porsi Mix Platter Cemilan hangat</td>
+                <td><strong>Rp 125.000</strong> / paket</td>
+                <td><span class="badge-time">Sesuai Reservasi</span></td>
+              </tr>
+              <tr>
+                <td><strong>Paket Gathering Komunitas</strong></td>
+                <td>10 Cup Minuman Segar + Meja Panjang Khusus Area Outdoor Sunset</td>
+                <td><strong>Rp 220.000</strong> / grup</td>
+                <td><span class="badge-time">3 Jam Kunjungan</span></td>
+              </tr>
+                            <tr class="table-note-row">
+                <td colspan="4">
+                  <strong>Catatan Khusus:</strong> Seluruh paket di atas sudah termasuk akses fasilitas internet Wi-Fi kencang, fasilitas stopkontak/colokan listrik di setiap meja, dan area parkir kendaraan luas tanpa biaya tambahan di TaKopi Takisung.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="Logo TaKopi" class="logo-img"><span class="logo-text">Ta<span>Kopi</span></span>
+          </a>
+          <p>
+            Kedai kafe kopi santai di Takisung, Kabupaten Tanah Laut, Kalimantan Selatan. Tempat ternyaman untuk menikmati aneka racikan kopi nikmat bersama sahabat dan keluarga.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi Halaman</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="produk.html">Katalog Menu</a></li>
+            <li><a href="kontak.html">Lokasi &amp; Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Alamat &amp; Operasional</h4>
+          <ul>
+            <li>Jl. Raya Takisung, Kec. Takisung</li>
+            <li>Kab. Tanah Laut, Kalimantan Selatan</li>
+            <li>Buka Setiap Hari: <time datetime="10:00">10.00</time> &ndash; <time datetime="23:00">23.00 WITA</time></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-identity">
+          Erfa Dyanti - 2510010020 - TI 3A NONREG BJB
+        </p>
+        <p class="footer-copy">
+          &copy; <time datetime="2026">2026</time> TaKopi Takisung. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
